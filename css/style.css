@@ -1381,3 +1381,346 @@ footer.footer {
     text-align: center;
   }
 }
+
+/* ===========================================================================
+   16. RESPONSIVE FINISHING RULES
+   =========================================================================== */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 72px;
+    --container-padding: 1.25rem;
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+
+  section.hero {
+    min-height: auto;
+    padding: calc(var(--nav-height) + 2rem) 0 3rem;
+  }
+
+  .nav-logo {
+    font-size: 1.75rem;
+  }
+
+  .nav-menu-btn {
+    width: 28px;
+    min-height: 44px;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .nav-menu-btn span {
+    flex: 0 0 2px;
+  }
+
+  .mobile-menu {
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    padding: 6rem 0 2rem;
+  }
+
+  .mobile-menu-content {
+    gap: 2.5rem;
+  }
+
+  .mobile-menu-links {
+    gap: 1.25rem;
+  }
+
+  .mobile-menu-links a {
+    font-size: clamp(2.75rem, 11vw, 4rem);
+  }
+
+  .mobile-menu-socials {
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+  }
+
+  .hero-grid {
+    gap: 2.25rem;
+  }
+
+  h1.hero-title {
+    font-size: clamp(3.25rem, 12vw, 6rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-info {
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-location {
+    align-items: flex-start;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-cta {
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .hero-cta .btn-primary,
+  .hero-cta .btn-secondary {
+    width: fit-content;
+    min-height: 48px;
+  }
+
+  .hero-art-frame {
+    aspect-ratio: 5 / 4;
+    border-radius: 16px;
+  }
+
+  .hero-art-glass {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .art-coord {
+    text-align: right;
+    overflow-wrap: anywhere;
+  }
+
+  .section-header {
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .section-title {
+    min-width: 0;
+    font-size: clamp(2rem, 8vw, 3rem);
+    overflow-wrap: anywhere;
+  }
+
+  .about-grid,
+  .contact-content {
+    gap: 2.5rem;
+  }
+
+  .about-stats {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .stat-item .stat-number {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+  }
+
+  .stat-item .stat-label {
+    font-size: 0.7rem;
+  }
+
+  .detail-row {
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.1rem 0;
+  }
+
+  .detail-value {
+    max-width: 65%;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .experience-card {
+    padding: 2rem 0;
+  }
+
+  .exp-role-header {
+    align-items: flex-start;
+  }
+
+  .project-item {
+    gap: 1.25rem;
+    padding: 2rem 0;
+  }
+
+  .project-header {
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .project-tech {
+    max-width: 85%;
+    margin-top: 0;
+    text-align: right;
+    overflow-wrap: anywhere;
+  }
+
+  .project-title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    overflow-wrap: anywhere;
+  }
+
+  .project-desc {
+    font-size: 1rem;
+  }
+
+  .project-features {
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-features li {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .contact-link-item {
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 0;
+  }
+
+  .contact-link-value {
+    min-width: 0;
+    max-width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    font-size: clamp(1rem, 4.5vw, 1.4rem);
+    text-align: right;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .contact-link-value svg {
+    flex: 0 0 14px;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 1rem;
+  }
+
+  .mobile-menu-content {
+    gap: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-cta .btn-primary,
+  .hero-cta .btn-secondary {
+    width: 100%;
+  }
+
+  .hero-art-glass {
+    align-items: flex-start;
+  }
+
+  .art-title {
+    font-size: 0.95rem;
+  }
+
+  .art-coord {
+    max-width: 6.5rem;
+    font-size: 0.6rem;
+  }
+
+  .section-number {
+    flex: 0 0 auto;
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 7.5vw, 2.35rem);
+  }
+
+  .about-left p,
+  .contact-text p {
+    font-size: 1rem;
+  }
+
+  .about-stats {
+    gap: 0.5rem;
+  }
+
+  .stat-item .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-item .stat-label {
+    max-width: 6.5rem;
+    font-size: 0.62rem;
+    line-height: 1.5;
+  }
+
+  .detail-label {
+    font-size: 0.72rem;
+  }
+
+  .detail-value {
+    max-width: 62%;
+    font-size: 0.9rem;
+  }
+
+  .skill-category {
+    padding: 1.25rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.3rem;
+  }
+
+  .skill-tag {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .exp-role-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-tech {
+    font-size: 0.75rem;
+  }
+
+  .achievement-item {
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+  }
+
+  .contact-link-label {
+    font-size: 0.72rem;
+  }
+
+  .contact-link-value {
+    max-width: 70%;
+    font-size: 0.95rem;
+  }
+
+  .footer-left p,
+  .footer-socials a {
+    font-size: 0.75rem;
+  }
+}
